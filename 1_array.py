@@ -17,5 +17,7 @@ def test():
     print(A[-2:3])  #[4.1]
     print(A[-3:3])  #[3, 4.1]
 
+    print(A[3:-3]) #[]
+
 if __name__ == '__main__':
     test()
