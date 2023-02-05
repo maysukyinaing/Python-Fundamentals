@@ -25,16 +25,22 @@ def test():
 
     #list Concatenation
     listConcat1=[1, 2, 3] + ['A', 'B', 'C']
-    print(listConcat1)
+    print(listConcat1)  #[1, 2, 3,'A', 'B', 'C']
     listConcat2 = ['A', 'B', 'C'] * 2
-    print(listConcat2)
+    print(listConcat2)  #['A', 'B', 'C', 'A', 'B', 'C']
 
     #In & Not in Operator
-    print('he' in ['hello', 'hi', 'nice to meet you'])
+    print('he' in ['hello', 'hi', 'nice to meet you']) #False
 
     #Index value in list
     list = ['hello', 'hi', 'nice to meet you']
-    print(list.index('hi'))
+    print(list.index('hi')) #1
+
+    Basket1 = ['apple','orange']
+    Basket1.append('mango')
+    print(Basket1)  #['apple', 'orange', 'mango']
+    Basket1.append(['mango1','mango2'])
+    print(Basket1[3][0])    #mango1
 
 
 if __name__ == '__main__':
