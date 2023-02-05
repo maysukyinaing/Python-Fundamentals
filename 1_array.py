@@ -36,12 +36,34 @@ def test():
     list = ['hello', 'hi', 'nice to meet you']
     print(list.index('hi')) #1
 
+    #append()
+    #The method is responsible for adding its parameters to the end of a list as a single element.
     Basket1 = ['apple','orange']
     Basket1.append('mango')
     print(Basket1)  #['apple', 'orange', 'mango']
     Basket1.append(['mango1','mango2'])
+    print(Basket1)  #['apple', 'orange', 'mango', ['mango1', 'mango2']]
     print(Basket1[3][0])    #mango1
 
+    #extend()
+    #The extend method is responsible for appending each iterable (it can be a tuple, any string, or a list) member to the list's end
+    Busket2 = ['apple','orange']
+    Busket2.extend(['cherry', 'blueberry'])
+    print(Busket2)  #['apple', 'orange', 'cherry', 'blueberry']
+    Busket2.remove('cherry')
+    print(Busket2)  #['apple', 'orange', 'blueberry']
+
+    #Extending an existing list by adding strings.
+    org_list=['x', 'y', 'z']
+    new_1='Hello, Guys!'
+    org_list.extend(new_1)
+    print(org_list) #['x', 'y', 'z', 'H', 'e', 'l', 'l', 'o', ',', ' ', 'G', 'u', 'y', 's', '!']
+
+    #insert(index, element)
+    #insert() function simply takes two parameters index at which the element is to be inserted and the element which is to be inserted.
+    insert_org_list=['welcome','python']
+    insert_org_list.insert(1,'to')
+    print(insert_org_list)
 
 if __name__ == '__main__':
     test()
