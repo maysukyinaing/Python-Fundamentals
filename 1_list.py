@@ -19,6 +19,15 @@ def test():
 
     print(A[3:-3]) #[]
 
+    B = ['apple', 'orange', 'cherry', 'avocado', 'blueberry', ['avocado1', 'avocado2'], 'pineapple']
+    print(B[3:3])   #[]
+    print(B[3:4])   #['avocado']
+    print(B[3:-1])  #['avocado', 'blueberry', ['avocado1', 'avocado2']]
+    print(B[3:-2])  #['avocado', 'blueberry']
+    print(B[3:-3])  #['avocado']
+    print(B[3:-4])  #[]
+    print(B[3:-5])  #[]
+
     #The len() function returns the number of items in an object.
     lenFunction=['cat','dog','tiger']
     print(len(lenFunction))  # 3
@@ -63,7 +72,19 @@ def test():
     #insert() function simply takes two parameters index at which the element is to be inserted and the element which is to be inserted.
     insert_org_list=['welcome','python']
     insert_org_list.insert(1,'to')
-    print(insert_org_list)
+    print(insert_org_list)  #['welcome', 'to', 'python']
+
+    #sort()
+    sort_list=[2,6,1,8,9]
+    sort_list.sort()
+    print(sort_list)    #[1, 2, 6, 8, 9]
+
+    #pop(index) -- remove value at given index
+    sort_list.pop(3)
+    print(sort_list)
+
+
+
 
 if __name__ == '__main__':
     test()
